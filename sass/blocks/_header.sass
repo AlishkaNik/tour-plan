@@ -1,16 +1,18 @@
 .navbar
-  background-color: #fff
+  background-color: #fff  
   &-top
     display: flex      
     align-items: center
     justify-content: space-between  
     padding-top: 40px
-    padding-bottom: 40px
+    padding-bottom: 40px 
+    &__menu-button 
+      display: none   
   &__search
     margin-right: auto
-    margin-left: 108px    
+    margin-left: 108px       
   &-bottom
-    background-color: $dark 
+    background-color: $dark     
   &-menu
     list-style-type: none
     margin: 0
@@ -65,6 +67,8 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
+.hidden-menu
+  display: none
     
     
 

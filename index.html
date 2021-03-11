@@ -23,17 +23,23 @@
                     </button>
                 </form>
 
-                <a href="#" class="user">
+                <a href="#" class="user navbar__user">
                    <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
                    <span class="user__name">Nathan</span>
                 </a>
                 <!-- /.user -->
+                <button class="menu-button navbar-top__menu-button">
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                </button>
             </div>
             <!-- /.navbar-top -->           
         </div>
         <!-- /.container -->
         <div class="navbar-bottom">
-            <div class="container"><ul class="navbar-menu">
+            <div class="container bottom-container">
+              <ul class="navbar-menu">
                 <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
                 <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
                 <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
@@ -41,9 +47,35 @@
                 <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Restaurants</a></li>
                 <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
                 <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
-            </ul>
-        </div>
+              </ul>           
+            </div>
             <!-- /.container -->
+            <div class="hidden-menu">                
+                <a href="#" class="user hidden-menu__user">
+                    <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+                    <span class="user__name">Nathan</span>
+                </a>
+                
+                 <!-- /.hidden-menu__user -->
+                 <form action="#" class="search hidden-menu__search">
+                    <input type="text" class="search__input" placeholder="Search Location">
+                    <button class="search__button">
+                        <img src="img/search.svg" alt="Icon: search">
+                    </button>
+                </form>
+                <!-- /hidden-meny__search -->
+                <ul class="hidden-list">
+                    <li class="hidden-list__item"><a href="#" class="hidden-list__link">All Deals</a></li>
+                    <li class="hidden-list__item"><a href="#" class="hidden-list__link">Hotels</a></li>
+                    <li class="hidden-list__item"><a href="#" class="hidden-list__link">Activities</a></li>
+                    <li class="hidden-list__item"><a href="#" class="hidden-list__link">Hotel Day Packages</a></li>
+                    <li class="hidden-list__item"><a href="#" class="hidden-list__link">Restaurants</a></li>
+                    <li class="hidden-list__item"><a href="#" class="hidden-list__link">Events</a></li>
+                    <li class="hidden-list__item"><a href="#" class="hidden-list__link">Rodrigues</a></li>
+                </ul>
+                <!-- hidden-menu -->
+            </div>
+            <!-- /.navbar_hidden-menu -->
         </div>
     </header>    
 </body>

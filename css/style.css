@@ -7,9 +7,13 @@ body {
   color: #333333;
 }
 
-.container {
+.container, .bottom-container {
   max-width: 1110px;
   margin: auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -363,6 +367,10 @@ template {
   padding-bottom: 40px;
 }
 
+.navbar-top__menu-button {
+  display: none;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
@@ -444,6 +452,10 @@ template {
   color: #333333;
 }
 
+.hidden-menu {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -454,13 +466,15 @@ template {
   .container {
     max-width: 700px;
   }
+  .logo {
+    width: 132px;
+  }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -470,11 +484,96 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .search__input {
+    width: 340px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 700px;
+    max-width: 576px;
+    width: 92%;
+  }
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
+  }
+  .menu-button {
+    display: flex;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    height: 70px;
+  }
+  .navbar-top .navbar__user {
+    display: none;
+  }
+  .bottom-container {
+    display: none;
+  }
+  .hidden-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 31px;
+    padding-bottom: 68px;
+  }
+  .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .user__avatar {
+    margin-bottom: 10px;
+  }
+  .user__name {
+    margin-left: 0;
+    margin-bottom: 27px;
+    color: #FFFFFF;
+  }
+  .search {
+    margin-bottom: 39px;
+    max-width: 245px;
+    height: 40px;
+  }
+  .hidden-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hidden-list__item {
+    margin-bottom: 20px;
+    list-style-type: none;
+  }
+  .hidden-list__link {
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 }
 /*# sourceMappingURL=style.css.map */
