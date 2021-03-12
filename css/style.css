@@ -653,7 +653,6 @@ template {
     display: none;
   }
   .hidden-menu {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 31px;
