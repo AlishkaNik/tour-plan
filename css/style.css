@@ -612,7 +612,7 @@ template {
     background-color: #333333;
   }
   .stars {
-    max-width: 13%;
+    width: auto;
   }
   .hotel-name {
     flex-basis: 100%;
@@ -649,7 +649,7 @@ template {
   .navbar-top .navbar__user {
     display: none;
   }
-  .bottom-container, .breadcrumb, .hotel {
+  .bottom-container {
     display: none;
   }
   .hidden-menu {
