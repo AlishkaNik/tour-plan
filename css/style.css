@@ -789,6 +789,9 @@ template {
   .slider {
     width: 100%;
   }
+  .swiper-slide__image {
+    height: 450px;
+  }
   .map {
     width: 340px;
   }
@@ -920,6 +923,29 @@ template {
     color: #FFFFFF;
     text-decoration: none;
     text-transform: uppercase;
+  }
+  .hotel-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .slider {
+    height: 179px;
+  }
+  .swiper-slide__image {
+    height: 179px;
+  }
+  .swiper-container {
+    height: 179px;
+  }
+  .booking {
+    height: 210px;
+    margin-bottom: 20px;
+  }
+  .map {
+    height: 173px;
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
