@@ -9,6 +9,7 @@
         width: 100%
         height: 100%
         object-fit: cover  
+        
 @media (max-width:992px) 
   .container
     max-width: 700px
@@ -39,13 +40,10 @@
   .booking
     width: 340px
   .slider
-    width: 100% 
-  .swiper
-    &-slide
-      &__image
-        height: 450px
+    width: 100%
   .map
     width: 340px
+
 @media (max-width:768px) 
   .container
     max-width: 576px
@@ -89,8 +87,19 @@
       &__offer
         order: -1
         margin-left: 0
-  .slider
-    height: 350px
+  .booking
+    flex-basis: 49%
+    height: 210px
+  .map
+    flex-basis: 49%
+    height: 210px
+
+// Изменила медиа запрос с 576 на 586, тк на 586 происходим слом booking
+@media (max-width:586px) 
+  .logo
+    width: 99px 
+  // .slider
+  //   height: 450px
   .hotel
     &-right
       flex-direction: column
@@ -99,15 +108,6 @@
     width: 100%
   .map
     width: 100%
-
-@media (max-width:576px) 
-  .logo
-    width: 99px 
-  .slider
-    height: 250px
-  .hotel
-    &__slider
-      margin-bottom: 20px
 @media (min-width:320px) and (max-width:480px)
   .container
     height: 70px
@@ -158,13 +158,15 @@
       display: flex  
       flex-direction: column
       align-items: center
-      justify-content: flex-start
+      justify-content: space-between
+    .hotel
+      &-right
+        width: 100%
   .slider
-    height: 179px
+    min-height: 0
   .swiper
-    &-slide
-      &__image        
-        height: 179px
+    &-slide       
+      min-height: 0
     &-container    
       height: 179px 
   .booking
