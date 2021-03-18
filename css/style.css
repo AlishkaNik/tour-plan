@@ -1080,9 +1080,15 @@ template {
   .reviews-slider__item {
     max-width: 579px;
   }
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
   .card {
-    width: 165px;
-    height: 165px;
+    width: 45%;
+    height: 255px;
   }
 }
 
@@ -1157,16 +1163,6 @@ template {
   }
   .reviews-slider__text {
     max-width: 400px;
-  }
-  .activities-wrapper {
-    flex-wrap: wrap;
-  }
-  .activities__card {
-    margin-bottom: 20px;
-  }
-  .card {
-    width: 48%;
-    height: 255px;
   }
 }
 
