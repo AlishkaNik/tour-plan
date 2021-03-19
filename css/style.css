@@ -1165,7 +1165,7 @@ template {
     max-width: 400px;
   }
   .card {
-    width: 100%;
+    width: 48%;
   }
 }
 
@@ -1245,6 +1245,9 @@ template {
   }
   .activities__title {
     margin-bottom: 36px;
+  }
+  .card {
+    width: 100%;
   }
 }
 
