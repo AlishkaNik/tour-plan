@@ -915,6 +915,7 @@ template {
   line-height: 15px;
   color: #ec1f46;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .reviews-slider__date {
