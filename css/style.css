@@ -1095,7 +1095,7 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
+    max-width: 699px;
     width: 92%;
   }
   .navbar__search {
@@ -1151,6 +1151,7 @@ template {
   .reviews-slider__text {
     max-width: 400px;
   }
+  padding: 60px 0 70px 0;
   .card {
     width: 48%;
   }
