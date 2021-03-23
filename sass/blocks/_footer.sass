@@ -23,7 +23,7 @@
       justify-content: space-between
     &-network
       display: flex
-      align-content: center
+      align-items: start
       grid-row: 2 / 4
       grid-column: span 2
   &__contact-details
@@ -83,6 +83,9 @@
     margin-bottom: 15px
     flex-basis: 48%
   &__message
+    resize: none
+    width: 539px
+    height: 123px
     background-color: #fff
     border-radius: 4px
     padding: 18px 23px
@@ -106,7 +109,7 @@
     font-weight: bold
     font-size: 12px
     line-height: 15px
-    color: $footer-text-color
+    color: #E0E0E0
   &__info-bottom
     grid-row: 5 / 6
     grid-column: 2 / 5

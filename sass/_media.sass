@@ -12,6 +12,10 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
+    
 
 @media (max-width:992px) 
   .container, .newsletter-wrapper
@@ -58,6 +62,40 @@
   .card
     width: 340px
     height: 255px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 48%
+    &__logo
+      grid-row:  1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-row: 4
+        grid-column: span 5
+    &__info-bottom
+      grid-column: 1 / 7
+    &__links
+      grid-column: 1 / 4
+    &__payment
+      grid-column: 6 / 7
 
 @media (max-width:768px) 
   .container
@@ -134,7 +172,12 @@
   .activities
   padding: 60px 0 70px 0
   .card
-    width: 48%  
+    // max-width: 339px 
+    width: 45%
+    min-width: 10%
+  .footer    
+    &__input
+      min-width: 20%
 
 // Изменила медиа запрос с 576 на 586, тк на 586 происходим слом booking
 @media (max-width:586px) 
@@ -220,8 +263,42 @@
     width: 100%
   //   // width: 280px
   //   // height: 255px
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr      
+      grid-row-gap: 30px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__legal
+      grid-row: 3
+      grid-column: 1
+    &__additional
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-column: 1
+        grid-row: 6
+      &-form
+        grid-row: 7
+        grid-column: 1       
+    &__input
+      min-width: 100%
+    &__info-bottom
+      grid-row: 8
+      grid-column: 1
+    &__message
+      width: 100%
 
-@media (min-width:320px) and (max-width:480px)  
+@media (min-width:320px) and (max-width:480px)   
   .navbar-top
     .navbar__user
       display: none
@@ -285,6 +362,50 @@
     margin-bottom: 20px
   .map
     height: 173px
+  .reviews
+    &__title
+      max-width: 245px
+      margin: auto
+      margin-bottom: 42px
+  .footer
+    &__social
+      &-network
+        display: flex
+        flex-direction: column
+        align-items: start
+    &__title
+      margin-bottom: 20px
+    &__categories
+      margin-bottom: 10px
+    &__contact
+      &-details
+        max-width: 93%
+    // &__contact
+    //   &-form
+    //     max-width: 100%
+    &__form
+      display: flex
+      flex-direction: column
+      align-items: start      
+    &__input
+      padding: 18px
+    // &__message
+    //   width: 100%
+    &__button
+      order: 1
+      margin-top: 15px
+    &__info-bottom
+      display: flex
+      flex-direction: column     
+      justify-content: space-around
+    &__links
+      display: flex
+      justify-content: space-between
+      width: 100%    
+      margin-bottom: 10px
+    &__payment
+      align-self: start
+  
     
      
            
