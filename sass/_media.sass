@@ -100,9 +100,9 @@
 @media (max-width:768px) 
   .container
     // max-width: 576px
-    max-width: 699px
-    width: 92%
-  .navbar
+    max-width: 700px
+    width: 92%    
+  .navbar    
     &__search
       width: 50%
   
@@ -181,11 +181,86 @@
 
 // Изменила медиа запрос с 576 на 586, тк на 586 происходим слом booking
 @media (max-width:586px) 
+  .container
+    max-width: 280px
+    width: 92% 
   .logo
     width: 99px 
-  .navbar
-    &__search, &-menu, &__user
+  .navbar    
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    // &__search, &__user
+    //   display: none
+    &__user, &__search
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      bottom: 0
+      right: 0
+      top: 78px
+      padding-top: 30px        
+      &_visible
+        display: block
+      &-menu
+        flex-direction: column
+        &__item
+          margin-bottom: 20px
+          &--mobile
+            &_visible
+              display: block
+     // !!!!РАСКОММЕНТИРОВАТЬ, КОГДА ДОЙДЁМ ДО JS,ДОЛЖНО ПОЯВЛЯТЬСЯ ТОЛЬКО ПРИ НАЖАТИИ НА МЕНЮ-БУРГЕР
+  // .hidden-menu
+  //   display: flex 
+  //   flex-direction: column
+  //   align-items: center
+  //   padding-top: 31px
+  //   padding-bottom: 68px
+  // .user
+  //   display: flex
+  //   flex-direction: column
+  //   align-items: center
+  //   justify-content: center
+  //   &__avatar
+  //     margin-bottom: 10px    
+  //   &__name      
+  //     margin-left: 0
+  //     margin-bottom: 27px
+  //     color: $light
+  // .search
+  //   margin-bottom: 39px
+  //   max-width: 245px
+  //   height: 40px
+  // .hidden-list
+  //   padding: 0
+  //   display: flex
+  //   flex-direction: column
+  //   align-items: center
+  //   &__item
+  //     margin-bottom: 20px
+  //     list-style-type: none
+  //   &__link 
+  //     font-size: 12px
+  //     line-height: 15px
+  //     color: $light    
+  //     text-decoration: none
+  //     text-transform: uppercase
+  // ДЕЛАЕМ ОТСТУП СВЕРХУ, ЧТОБЫ НЕ ИСЧЕЗАЛИ ХЛЕБНЫЕ КРОШКИ
+  body
+    padding-top: 78px  
   .hotel
     &__slider
       padding-bottom: 0
@@ -203,12 +278,18 @@
       justify-content: space-between
       flex-direction: column
       border: none
-      background-color: $light
+      background-color: #fff
       cursor: pointer
       &__line
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .booking
     width: 100%
     margin-bottom: 20px
@@ -304,42 +385,42 @@
       display: none
   .bottom-container
     display: none
-  .hidden-menu  
-    // !!!!РАСКОММЕНТИРОВАТЬ, КОГДА ДОЙДЁМ ДО JS,ДОЛЖНО ПОЯВЛЯТЬСЯ ТОЛЬКО ПРИ НАЖАТИИ НА МЕНЮ-БУРГЕР
-    // display: flex 
-    flex-direction: column
-    align-items: center
-    padding-top: 31px
-    padding-bottom: 68px
-  .user
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    &__avatar
-      margin-bottom: 10px    
-    &__name      
-      margin-left: 0
-      margin-bottom: 27px
-      color: $light
-  .search
-    margin-bottom: 39px
-    max-width: 245px
-    height: 40px
-  .hidden-list
-    padding: 0
-    display: flex
-    flex-direction: column
-    align-items: center
-    &__item
-      margin-bottom: 20px
-      list-style-type: none
-    &__link 
-      font-size: 12px
-      line-height: 15px
-      color: $light    
-      text-decoration: none
-      text-transform: uppercase
+  // .hidden-menu  
+  //   // !!!!РАСКОММЕНТИРОВАТЬ, КОГДА ДОЙДЁМ ДО JS,ДОЛЖНО ПОЯВЛЯТЬСЯ ТОЛЬКО ПРИ НАЖАТИИ НА МЕНЮ-БУРГЕР
+  //   display: flex 
+  //   flex-direction: column
+  //   align-items: center
+  //   padding-top: 31px
+  //   padding-bottom: 68px
+  // .user
+  //   display: flex
+  //   flex-direction: column
+  //   align-items: center
+  //   justify-content: center
+  //   &__avatar
+  //     margin-bottom: 10px    
+  //   &__name      
+  //     margin-left: 0
+  //     margin-bottom: 27px
+  //     color: $light
+  // .search
+  //   margin-bottom: 39px
+  //   max-width: 245px
+  //   height: 40px
+  // .hidden-list
+  //   padding: 0
+  //   display: flex
+  //   flex-direction: column
+  //   align-items: center
+  //   &__item
+  //     margin-bottom: 20px
+  //     list-style-type: none
+  //   &__link 
+  //     font-size: 12px
+  //     line-height: 15px
+  //     color: $light    
+  //     text-decoration: none
+  //     text-transform: uppercase
   .hotel
     margin-bottom: 40px
     &-grid
