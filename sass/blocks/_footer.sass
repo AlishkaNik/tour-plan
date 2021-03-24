@@ -2,7 +2,7 @@
   background-color: $dark
   color: $light
   padding-top: 108px
-  margin-bottom: 46px
+  padding-bottom: 46px
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
@@ -11,8 +11,9 @@
     align-items: start
   &__logo
     width: 166px
+    height: 192px
     grid-row: 1 / 3
-    align-self: stretch
+    align-self: center
   &__categories
     grid-row: 1 / 4
   &__social
@@ -64,6 +65,18 @@
   &__icon
     &-wrapper
       min-width: 40px
+  &__phone
+    &-number
+      display: flex
+      flex-direction: column
+  &__link
+    &-number
+     text-decoration: none
+     color: inherit
+     white-space: nowrap
+  &__email
+    text-decoration: none
+    color: inherit
   &__text  
     margin-bottom: 22px  
     font-style: normal

@@ -161,6 +161,9 @@
   .footer    
     &__input
       min-width: 20%
+    &__logo     
+      width: 104px
+      height: 120px
 
 // Изменила медиа запрос с 576 на 586, тк на 586 происходим слом booking
 @media (max-width:586px) 
@@ -315,7 +318,7 @@
       grid-row-gap: 30px
     &__logo
       grid-row: 1
-      grid-column: 1
+      grid-column: 1      
     &__social
       &-network
         grid-row: 2
@@ -432,18 +435,18 @@
     &__form
       display: flex
       flex-direction: column
-      align-items: start      
+      align-items: start   
+      margin-bottom: 0px   
     &__input
-      padding: 18px
-    // &__message
-    //   width: 100%
+      min-height: 50px
+    &__message
+      min-height: 123px
     &__button
       order: 1
       margin-top: 15px
     &__info-bottom
       display: flex
-      flex-direction: column     
-      justify-content: space-around
+      flex-direction: column 
     &__links
       display: flex
       justify-content: space-between
