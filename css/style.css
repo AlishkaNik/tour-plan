@@ -1181,6 +1181,10 @@ template {
 .footer__input {
   margin-bottom: 15px;
   flex-basis: 48%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__message {
@@ -1188,6 +1192,10 @@ template {
   height: 123px;
   flex-basis: 100%;
   margin-bottom: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__info {
@@ -1241,7 +1249,7 @@ template {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
-  visability: hidden;
+  visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -1262,7 +1270,7 @@ template {
   color: #FFFFFF;
   border-radius: 8px;
   z-index: 101;
-  visability: hidden;
+  visibility: hidden;
   opacity: 0;
   transition: opacity 0.2s;
 }
@@ -1468,7 +1476,9 @@ template {
   .reviews-slider__text {
     max-width: 400px;
   }
-  padding: 60px 0 70px 0;
+  .activities {
+    padding: 60px 0 70px 0;
+  }
   .card {
     width: 45%;
     min-width: 10%;
@@ -1523,6 +1533,10 @@ template {
     right: 0;
     z-index: 99;
   }
+  .navbar__search {
+    width: 100%;
+    margin-bottom: 39px;
+  }
   .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
     display: none;
   }
@@ -1545,13 +1559,13 @@ template {
   .navbar-bottom--visible {
     display: block;
   }
-  .navbar-bottom-menu {
+  .navbar-menu {
     flex-direction: column;
   }
-  .navbar-bottom-menu__item {
-    margin-bottom: 20px;
+  .navbar-menu__item {
+    margin-bottom: 27px;
   }
-  .navbar-bottom-menu__item--mobile_visible {
+  .navbar-menu__item--mobile_visible {
     display: block;
   }
   body {
@@ -1697,11 +1711,8 @@ template {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .navbar-top .navbar__user {
-    display: none;
-  }
-  .bottom-container {
-    display: none;
+  .navbar__search {
+    max-width: 245px;
   }
   .hotel {
     margin-bottom: 40px;

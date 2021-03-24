@@ -105,28 +105,6 @@
   .navbar    
     &__search
       width: 50%
-  // .stars 
-  //   width: auto
-    // width: 100%
-    // flex-basis: 25%
-  // .hotel
-  //   padding-bottom: 0
-  //   margin-bottom: 60px
-  //   &-name
-  //     flex-basis: 100%
-  //   &-wrapper     
-  //     justify-content: space-between
-  //   &-info
-  //     &__text
-  //       width: 100%
-  //     &__name
-  //       margin-top: 10px
-  //       margin-bottom: 0
-  //     &__rating
-  //       display: none
-  //     &__offer
-  //       order: -1
-  //       margin-left: 0 
   .booking
     flex-basis: 49%
     height: 210px
@@ -153,7 +131,7 @@
   //   &__card      
   //     margin-bottom: 20px
   .activities
-  padding: 60px 0 70px 0
+    padding: 60px 0 70px 0
   .card
     // max-width: 339px 
     width: 45%
@@ -200,7 +178,10 @@
         top: 0
         right: 0
         z-index: 99
-    &__user, &__search
+    &__search
+      width: 100%
+      margin-bottom: 39px
+    &__user,  &__search
       &--mobile
         &_hidden
           display: none
@@ -208,7 +189,7 @@
           display: flex
     &__user
       flex-direction: column
-      justify-content: center
+      justify-content: center    
     &-bottom
       display: none
       position: fixed
@@ -219,13 +200,13 @@
       padding-top: 30px        
       &--visible
         display: block
-      &-menu
-        flex-direction: column
-        &__item
-          margin-bottom: 20px
-          &--mobile
-            &_visible
-              display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 27px
+        &--mobile
+          &_visible
+            display: block
   // ДЕЛАЕМ ОТСТУП СВЕРХУ, ЧТОБЫ НЕ ИСЧЕЗАЛИ ХЛЕБНЫЕ КРОШКИ
   body
     padding-top: 78px  
@@ -347,48 +328,10 @@
     &__message
       width: 100%
 
-@media (min-width:320px) and (max-width:480px)   
-  .navbar-top
-    .navbar__user
-      display: none
-  .bottom-container
-    display: none
-  // .hidden-menu  
-  //   // !!!!РАСКОММЕНТИРОВАТЬ, КОГДА ДОЙДЁМ ДО JS,ДОЛЖНО ПОЯВЛЯТЬСЯ ТОЛЬКО ПРИ НАЖАТИИ НА МЕНЮ-БУРГЕР
-  //   display: flex 
-  //   flex-direction: column
-  //   align-items: center
-  //   padding-top: 31px
-  //   padding-bottom: 68px
-  // .user
-  //   display: flex
-  //   flex-direction: column
-  //   align-items: center
-  //   justify-content: center
-  //   &__avatar
-  //     margin-bottom: 10px    
-  //   &__name      
-  //     margin-left: 0
-  //     margin-bottom: 27px
-  //     color: $light
-  // .search
-  //   margin-bottom: 39px
-  //   max-width: 245px
-  //   height: 40px
-  // .hidden-list
-  //   padding: 0
-  //   display: flex
-  //   flex-direction: column
-  //   align-items: center
-  //   &__item
-  //     margin-bottom: 20px
-  //     list-style-type: none
-  //   &__link 
-  //     font-size: 12px
-  //     line-height: 15px
-  //     color: $light    
-  //     text-decoration: none
-  //     text-transform: uppercase
+@media (min-width:320px) and (max-width:480px)
+  .navbar
+    &__search
+      max-width: 245px
   .hotel
     margin-bottom: 40px
     &-grid
