@@ -512,7 +512,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 10px;
   padding-bottom: 70px;
 }
 
@@ -520,7 +520,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .hotel-info__offer {
@@ -567,6 +567,7 @@ template {
 .hotel-slider {
   width: 728px;
   min-height: 450px;
+  margin-left: 5px;
 }
 
 .hotel-slider__item {
@@ -655,6 +656,7 @@ template {
 .booking {
   border-radius: 8px;
   width: 350px;
+  height: 45%;
   min-height: 210px;
   padding: 28px;
   background-color: #0A223D;
@@ -753,6 +755,7 @@ template {
   color: #FFFFFF;
   border: none;
   cursor: pointer;
+  padding: 13px;
 }
 
 .map {
@@ -764,7 +767,7 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 98px 0 87px 0;
+  padding: 78px 0 67px 0;
   background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -849,7 +852,7 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 15px 0 70px 0;
 }
 
 .reviews__title {
@@ -974,7 +977,7 @@ template {
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 10px 0 98px 0;
 }
 
 .activities__title {
