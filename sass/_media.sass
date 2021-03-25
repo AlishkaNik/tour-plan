@@ -330,6 +330,9 @@
       grid-column: 1
     &__message
       width: 100%
+  .modal
+    &__dialog
+     max-width: 90%
 
 @media (min-width:320px) and (max-width:480px)
   .navbar
@@ -403,7 +406,15 @@
   .modal
     &__dialog
       overflow-y: auto
-      height: 96vh
+      max-height: 96vh
+      padding: 16px 35px
+    &__button
+      &-wrapper
+        flex-wrap: wrap
+    &__info
+      margin-top: 5px
+      
+
 
   
     
