@@ -1799,5 +1799,9 @@ template {
   .footer__payment {
     align-self: start;
   }
+  .modal__dialog {
+    overflow-y: auto;
+    max-height: 287px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
