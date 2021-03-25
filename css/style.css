@@ -1801,7 +1801,7 @@ template {
   }
   .modal__dialog {
     overflow-y: auto;
-    max-height: 287px;
+    height: 96vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
