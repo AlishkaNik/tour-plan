@@ -1539,7 +1539,7 @@ template {
   }
   .navbar__search {
     width: 100%;
-    margin-bottom: 39px;
+    margin-bottom: 19px;
   }
   .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
     display: none;
@@ -1562,12 +1562,13 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow-y: auto;
   }
   .navbar-menu {
     flex-direction: column;
   }
   .navbar-menu__item {
-    margin-bottom: 27px;
+    margin-bottom: 20px;
   }
   .navbar-menu__item--mobile_visible {
     display: block;
